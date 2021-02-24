@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberMovie</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- FONT GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-detail">
+            <p class="text-right text-white mb-0">
+                <i class="fa fa-phone"></i>
+                <span class="mx-2 border-right pr-2 font-weight-bold">0913.056.641</span>
+                <i class="fa fa-search"></i>
+            </p>
+        </div>
+        <nav class="container navbar navbar-expand-lg navbar-dark header__navbar py-0">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item line active">
+                        <a class="nav-link " href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link " href="#">WHAT'S ON</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">SHORTCODES</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link " href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link " href="#">SIGN IN</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link " href="#">SIGN UP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- CAROUSEL -->
+    <section class="my-carousel">
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators justify-content-start">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active item-1">
+                    <div class="carousel-item__overlay">
+
+                    </div>
+                    <div class="container carousel-item__caption text-white">
+                        <span class="title">ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part I</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam at aperiam sit, architecto
+                            nostrum deleniti aliquid quo dolorum saepe praesentium.</p>
+                        <div class="carousel-item__trailer mt-4">
+                            <span class="mr-2 text-white d-inline-block rounded-circle text-center">BG</span>
+                            <button class="btn-orange border-0 text-white">
+                                <i class="fa fa-play mr-2"></i>
+                                PLAY TRAILER
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item-2">
+                    <div class="carousel-item__overlay">
+
+                    </div>
+                    <div class="container carousel-item__caption text-white">
+                        <span class="title">ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part II</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam at aperiam sit, architecto
+                            nostrum deleniti aliquid quo dolorum saepe praesentium.</p>
+                        <div class="carousel-item__trailer mt-4">
+                            <span class="mr-2 text-white d-inline-block rounded-circle text-center">BG</span>
+                            <button class="btn-orange border-0 text-white">
+                                <i class="fa fa-play mr-2"></i>
+                                PLAY TRAILER
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item-3">
+                    <div class="carousel-item__overlay">
+
+                    </div>
+                    <div class="container carousel-item__caption text-white">
+                        <span class="title">ACTION, ADVENTURE, FANTASY</span>
+                        <h1 class="display-4">End of the World: Part III</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam at aperiam sit, architecto
+                            nostrum deleniti aliquid quo dolorum saepe praesentium.</p>
+                        <div class="carousel-item__trailer mt-4">
+                            <span class="mr-2 text-white d-inline-block rounded-circle text-center">BG</span>
+                            <button class="btn-orange border-0 text-white">
+                                <i class="fa fa-play mr-2"></i>
+                                PLAY TRAILER
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SHOWING MOVIE -->
+    <section class="movie">
+        <div class="container">
+            <h1 class="movie__title line section-title">SHOWING MOVIE</h1>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 text-center">
+                    <div class="movie__item text-white">
+                        <img src="./img/movie-1.jpg" class="w-100">
+                        <div class="movie__overlay"></div>
+                        <div class="movie__detail">
+                            <i class="fa fa-play d-block"></i>
+                            <a class="d-block">READ MORE</a>
+                            <span class="d-block">Released: 7, March 2017</span>
+                        </div>
+                    </div>
+                    <p class="movie__name">Hush</p>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center">
+                    <div class="movie__item text-white">
+                        <img src="./img/movie-2.jpg" class="w-100">
+                        <div class="movie__overlay"></div>
+                        <div class="movie__detail">
+                            <i class="fa fa-play d-block"></i>
+                            <a class="d-block">READ MORE</a>
+                            <span class="d-block">Released: 7, March 2017</span>
+                        </div>
+                    </div>
+                    <p class="movie__name">Men of steel</p>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center">
+                    <div class="movie__item text-white">
+                        <img src="./img/movie-3.jpg" class="w-100">
+                        <div class="movie__overlay"></div>
+                        <div class="movie__detail">
+                            <i class="fa fa-play d-block"></i>
+                            <a class="d-block">READ MORE</a>
+                            <span class="d-block">Released: 7, March 2017</span>
+                        </div>
+                    </div>
+                    <p class="movie__name">Caption Marvel</p>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                </div>
+                <div class="col-sm-6 col-lg-3 text-center">
+                    <div class="movie__item text-white">
+                        <img src="./img/movie-4.jpg" class="w-100">
+                        <div class="movie__overlay"></div>
+                        <div class="movie__detail">
+                            <i class="fa fa-play d-block"></i>
+                            <a class="d-block">READ MORE</a>
+                            <span class="d-block">Released: 7, March 2017</span>
+                        </div>
+                    </div>
+                    <p class="movie__name">Iron Man 3</p>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                    <i class="fa fa-star movie__star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SHOWING TIME -->
+    <section class="showtime">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line active" id="home-tab" data-toggle="tab" href="#mon" role="tab">MON</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="home-tab" data-toggle="tab" href="#tue" role="tab">TUE</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="home-tab" data-toggle="tab" href="#wed" role="tab">WED</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="home-tab" data-toggle="tab" href="#thur" role="tab">THUR</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="home-tab" data-toggle="tab" href="#fri" role="tab">FRI</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="home-tab" data-toggle="tab" href="#sat" role="tab">SAT</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link line" id="home-tab" data-toggle="tab" href="#sun" role="tab">SUN</a>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="mon" role="tabpanel">
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-11.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-12.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-13.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="tue" role="tabpanel">
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-3.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-2.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-1.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="wed" role="tabpanel">
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-6.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-5.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-4.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="thur" role="tabpanel">
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-9.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-8.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-7.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="fri" role="tabpanel">
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-14.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-11.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-3.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="sat" role="tabpanel">
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-11.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-1.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-13.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade " id="sun" role="tabpanel">
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-6.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-9.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row showtime-movie my-4">
+                        <div class="col-2">
+                            <img src="./img/movie-7.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-10">
+                            <div class="showtime-detail ">
+                                <span>ACTION, ADVENTURE, FANTASY</span>
+                                <h1 class="display-4">It's over</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis exercitationem
+                                    obcaecati veniam mollitia similique.</p>
+                                <a href="#" class="d-block mb-4">
+                                    FULL SYNOPSIS
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                                <div class="showtime-list d-flex justify-content-between align-items-center">
+                                    <div class="">
+                                        <i class="fa fa-clock"></i>
+                                        <span class="mr-2">VIEWING TIMES</span>
+                                        <button class="btn mr-2">14:25</button>
+                                        <button class="btn mr-2">16:45</button>
+                                        <button class="btn mr-2">17:25</button>
+                                        <button class="btn mr-2">19:25</button>
+                                    </div>
+                                    <p class="showtime-length">
+                                        105 MINS
+                                        <span class="d-inline-block bg-dark text-white font-weight-bold">15</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- COMING SOON -->
+    <section class="coming">
+        <div class="coming-bg">
+            <div class="container">
+                <h1 class="section-title line">COMING SOON</h1>
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="coming-detail text-white">
+                            <span>COMEDY, CRIME</span>
+                            <h1 class="display-4">The Hangover Part III</h1>
+                            <p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span class="coming-date">
+                                    <i class="fa fa-calendar"></i>
+                                    30 September, 2017
+                                </span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio tempore libero rem alias
+                                vitae earum perspiciatis iste esse, pariatur ducimus!</p>
+                            <a href="#">MORE INFO <i class="fa fa-angle-right"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="coming-trailer">
+                            <img src="./img/slide-3-video.png">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coming-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="./img/movie-11.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./img/movie-12.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./img/movie-13.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./img/movie-14.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./img/movie-7.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-2">
+                        <img src="./img/movie-8.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <sectiOn class="contact">
+
+    </sectiOn>
+    <!-- FOOTER -->
+    <footer class="footer">
+
+    </footer>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <!-- POPPER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
