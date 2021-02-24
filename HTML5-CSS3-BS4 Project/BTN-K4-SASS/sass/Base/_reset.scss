@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: $fs-0;
+    font-weight: $fw-0;
+    line-height: $line-height-0;
+    color: $color-black-0;
+    background-color: $color-white-0;
+}
+hr{
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid $color-gray-18;
+}

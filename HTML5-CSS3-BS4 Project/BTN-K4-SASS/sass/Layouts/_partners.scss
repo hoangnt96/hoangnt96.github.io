@@ -1,0 +1,17 @@
+.partners {
+    padding: 100px 0;
+    .partners-content {
+        .partners-item {
+            margin: $mg-1;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+@include responsive("medium") {
+    .partners {
+        padding: 50px 0;
+    }
+}

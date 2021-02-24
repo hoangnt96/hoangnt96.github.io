@@ -1,0 +1,105 @@
+.fun {
+    background-image: url("../../img/pattern-2.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+    .fun-content {
+        .nav {
+            .nav-item {
+                margin-left: $pd-4;
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                .nav-link {
+                    position: relative;
+                    &:hover,
+                    &.active {
+                        background-color: $color-white-0;
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                    padding: 35px 70px;
+                    background-color: $color-gray-14;
+                    border-radius: 0;
+                    transition: all 0.3s ease;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -10px;
+                        left: 50%;
+                        width: 0;
+                        height: 0;
+                        transform: translateX(-50%);
+                        border-width: 10px 10px 0 10px;
+                        border-color: $color-white-0 transparent transparent transparent;
+                        border-style: solid;
+                        transition: all 0.3s ease;
+                        opacity: 0;
+                    }
+                    .intro-icon {
+                        .icon {
+                            @include iconMoon($fs-5 + 1, $color-black-5, $line-height-1);
+                        }
+                    }
+                }
+            }
+        }
+        .tab-content {
+            padding: $pd-0 0;
+            .tab-pane {
+                p {
+                    &:first-of-type {
+                        letter-spacing: $letter-spacing-2;
+                        color: $color-gray-1;
+                        font-size: $fs-2 + 1;
+                        text-transform: uppercase;
+                        margin: 0;
+                    }
+                    &:last-of-type {
+                        line-height: $line-height-2 + 5;
+                    }
+                }
+                h2 {
+                    margin-bottom: 0;
+                    letter-spacing: $letter-spacing-2;
+                    text-transform: uppercase;
+                    @include styleText($fs-4, $fw-2, $color-black-1);
+                    line-height: $line-height-0;
+                    margin-bottom: $mg-3;
+                }
+            }
+        }
+    }
+}
+@include responsive("medium") {
+    .fun {
+        padding: 50px 0;
+        .fun-content {
+            padding: 0 $pd-0;
+            .nav {
+                .nav-item {
+                    width: 100%;
+                   margin-left: 0;
+                   margin-bottom: $mg-4;
+                   .intro-icon{
+                    text-align: center;
+                   }
+                }
+            }
+            .tab-content {
+                .tab-pane {
+                    p {
+                        &:first-of-type {
+                            font-size: $fs-0 - 1;
+                          
+                        }
+                    }
+                    h2 {
+                       font-size: $fs-1;
+                    }
+                }
+            }
+        }
+    }
+}

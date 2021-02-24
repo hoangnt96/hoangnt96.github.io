@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    background-color: white;
+    letter-spacing: 1px;
+}
+.content .tinhCuoc{
+    padding: 10px 0;
+}
+.content .tinhCuoc img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.content .tinhCuoc hr {
+    border-top: 2px dashed black
+}
+
+.content .tinhCuoc label {
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.content .tinhCuoc label:hover {
+    cursor: pointer;
+}
+
+.content .tinhCuoc .theCheck {
+    margin: 25px 0;
+    padding-left: 10px;
+}
+
+.content .tinhCuoc .theCheck .check-item {
+    display: inline-block;
+}
+
+.content .tinhCuoc .theCheck .check-item:hover label {
+    color: #D2A233;
+}
+
+.content .tinhCuoc .theCheck .check-item:hover .checkbox {
+    border-color: #D2A233;
+}
+
+.content .tinhCuoc .checkbox {
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: -5px;
+    border: 3.5px solid black;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transform: all .5s;
+}
+
+.content .tinhCuoc .checkbox:checked+label {
+    color: #D2A233;
+}
+
+.content .tinhCuoc .checkbox:checked.checkbox::after {
+    background-color: #D2A233;
+}
+
+.content .tinhCuoc .checkbox:checked {
+    border-color: #D2A233;
+}
+
+.content .tinhCuoc .checkbox::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    transform: all .5s;
+}
+
+.content .tinhCuoc .checkbox:checked.checkbox::after {
+    display: block;
+}
+
+.content .tinhCuoc h5 {
+    font-size: 25px;
+}
+
+.content .tinhCuoc .inputData {
+    margin: 5px 0 40px;
+    border: none;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 2px 0;
+}
+
+.content .tinhCuoc .inputData:focus {
+    outline: none;
+}
+
+.content .tinhCuoc .tinhCuoc-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.content .tinhCuoc .tinhCuoc-btn button {
+    color: white;
+    width: 40%;
+    border-radius: 20px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+}
+
+.content .tinhCuoc .tinhCuoc-btn .btn-tinhTien {
+    background: linear-gradient(45deg, #D4AE44, #864840);
+}
+
+.content .tinhCuoc .tinhCuoc-btn .btn-inHoaDon {
+    background: linear-gradient(45deg, #864840, #D4AE44);
+}
+.content .tinhCuoc .thanhTien{
+    font-size: 25px;
+    padding: 10px;
+    background-color: #E5C553;
+    border-radius: 10px;
+}
+.content .tinhCuoc .thanhTien p{
+    margin: 0;
+    
+}
+.content .tinhCuoc .tongTienTra{
+    background-color: #D0EAD5;
+    color: #587E62;
+    font-weight: 500;
+}
+.content .tinhCuoc .modal-body{
+   font-size: 14px;
+}
+.content .tinhCuoc .modal-footer button{
+    width: auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+ }

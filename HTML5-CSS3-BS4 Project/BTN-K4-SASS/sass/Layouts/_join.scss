@@ -1,0 +1,50 @@
+.join {
+    margin-top: 100px;
+    padding: 0 $pd-0 100px;
+    .join-content {
+        padding: 40px;
+        background-color: $color-gray-11;
+        position: relative;
+        .join-text {
+            padding-right: 200px;
+            h4 {
+                margin-bottom: 0;
+                letter-spacing: $letter-spacing-4;
+                text-transform: uppercase;
+                color: $color-black-1;
+                line-height: $line-height-0;
+                font-size: $fs-1 - 2;
+                span {
+                    color: $color-yellow-0;
+                }
+            }
+            p {
+                margin-top: $mg-4;
+                color: $color-gray-1;
+            }
+        }
+        .join-button{
+            position: absolute;
+            top: 50%;
+            right: 40px;
+            margin-top: -28px;
+        }
+    }
+}
+@include responsive("medium"){
+    .join{
+        .join-content{
+            .join-text{
+                padding: 0;
+            }
+            .join-button{
+                position: static;
+                margin-top: 0;
+                .button--black{
+                    font-size: $fs-0 - 3;
+                }
+            }
+        }
+       
+    }
+}

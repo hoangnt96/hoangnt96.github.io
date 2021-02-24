@@ -1,0 +1,123 @@
+.team {
+    margin-top: 0;
+    padding-top: 100px;
+    .team-content {
+        .team-intro {
+            padding: 0;
+        }
+        .team-body {
+            .col-md-4 {
+                padding: 0 $pd-0;
+            }
+            .team-item {
+                position: relative;
+                .team-img {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .team-text {
+                        position: absolute;
+                        right: 0;
+                        bottom: 30px;
+                        width: 70%;
+                        padding: $pd-3 $pd-4;
+                        text-align: right;
+                        background: $color-black-4;
+                        color: $color-white-0;
+                        h5 {
+                            margin-bottom: 0;
+                            letter-spacing: $letter-spacing-2;
+                            text-transform: uppercase;
+                            font-size: $fs-2 + 1;
+                            line-height: $line-height-0;
+                        }
+                        p {
+                            color: $color-gray-10;
+                            font-size: $fs-2 - 1;
+                            letter-spacing: $letter-spacing-2;
+                            text-transform: uppercase;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .team-hover {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: 0;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    border: 20px solid $color-black-3;
+                    background-color: $color-gray-7;
+                    .team-hover--text {
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        padding: 0 $pd-4;
+                        transition: all 0.3s 0.2s;
+                        transform: translateY(-55%);
+                        opacity: 0;
+                        text-align: center;
+                        color: $color-black-2;
+                        h4 {
+                            margin-bottom: $mg-6;
+                            letter-spacing: $letter-spacing-3;
+                            text-transform: uppercase;
+                            font-size: $fs-2 + 1;
+                        }
+                        p {
+                            margin-bottom: 0;
+                            color: $color-gray-1;
+                            font-size: $fs-2 + 1;
+                            font-weight: normal;
+                            line-height: $line-height-2 + 5;
+                        }
+                    }
+                    .team-hover--link {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        transition: all 0.3s 0.2s;
+                        transform: translateY(45%);
+                        text-align: center;
+                        opacity: 0;
+                        font-size: $fs-5;
+                        a {
+                            text-align: center;
+                            margin: 0 $mg-4;
+                            i {
+                                color: $color-black-1;
+                                font-size: $fs-0 + 1;
+                                transition: all 0.5s;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .team-hover {
+                        opacity: 1;
+                        .team-hover--text {
+                            top: 35%;
+                            opacity: 1;
+                        }
+                        .team-hover--link {
+                            opacity: 1;
+                            bottom: 10%;
+                            a {
+                                &:hover {
+                                    i {
+                                        color: $color-yellow-0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

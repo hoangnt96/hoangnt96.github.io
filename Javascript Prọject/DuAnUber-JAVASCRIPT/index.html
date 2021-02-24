@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính cước Uber</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="content container-fluid">
+        <div class="row">
+            <div class="col-7">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d59379.11469123406!2d105.37705527388928!3d9.776764012021815!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1608953063259!5m2!1svi!2s"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="col-5">
+                <div class="tinhCuoc">
+                    <img src="./MAX-OP1.png" alt="logo">
+                    <h1 class="text-center">TÍNH CƯỚC UBER</h1>
+                    <hr>
+                    <h5>Vui lòng chọn xe</h5>
+                    <div class="theCheck">
+                        <div class="check-item">
+                            <input class="checkbox" type="checkbox" name="xa" id="x" onclick="oneCheck(this)" value="0"> <label for="x">Uber
+                                X </label>
+                        </div>
+                        <div class="check-item">
+                            <input class="checkbox" type="checkbox" id="suv" onclick="oneCheck(this)" value="1"> <label
+                                for="suv">Uber Suv </label>
+                        </div>
+                        <div class="check-item">
+                            <input class="checkbox" type="checkbox" id="black" onclick="oneCheck(this)" value="2"> <label
+                                for="black">Uber Black </label>
+                        </div>
+                    </div>
+                    <h5>Nhập vào số KM</h5>
+                    <input class="inputData" type="text" id="soKM" onclick="anTheThanhTien()">
+                    <h5>Nhập thời gian chờ</h5>
+                    <input class="inputData" type="text" id="thoiGianCho" onclick="anTheThanhTien()">
+                    <div class="tinhCuoc-btn">
+                        <button class="btn-tinhTien" onclick="inTongTien()">TÍNH TIỀN</button>
+                        <button type="button" class="btn-inHoaDon" data-toggle="modal" data-target="#myModal" onclick="inHoaDon()">IN
+                            HÓA
+                            ĐƠN</button>
+                          
+                        <!-- Modal -->
+                        <div id="blank"></div>
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5>Hóa Đơn</h5>
+                                        <button class="close text-right mr-1" data-dismiss="modal" style="color: #404040;" > &times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Chi tiết</th>
+                                                <th scope="col">Sử dụng</th>
+                                                <th scope="col">Đơn giá</th>
+                                                <th scope="col">Thành tiền</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thanhTien">
+                        <p>Thành tiền: <span class="tongTien"></span> VNĐ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

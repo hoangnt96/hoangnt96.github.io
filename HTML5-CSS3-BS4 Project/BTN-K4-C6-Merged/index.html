@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merged</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- FONT GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container py-3 px-0" id="home">
+            <div class="row">
+                <div class="col">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="col text-center text-sm-right">
+                    <i class="fa fa-phone"></i>
+                    <span>+021 365 777</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container nav-content">
+            <a href="index.html" class="navbar-brand navbar-brand--icon text-md-center">
+                <span>M</span>ERGED
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse navbar-collapse--menu" id="myMenu">
+                <ul class="navbar-nav ml-auto navbar-nav--menu" id="mainNav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">GALLERY</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">PAGES</a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item">Item 1</div>
+                            <div class="dropdown-item">Item 2</div>
+                            <div class="dropdown-item">Item 3</div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CAROUSEL -->
+    <div class="carousel slide carousel--config active" data-ride="carousel" id="carousel-slider">
+        <ol class="carousel-indicators carousel-indicators--config">
+            <li class="active" data-target="#carousel-slider" data-slide-to="0"></li>
+            <li data-target="#carousel-slider" data-slide-to="1"></li>
+            <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/b1.jpg" class="img-fluid">
+                <div class="carousel-caption carousel-caption--info">
+                    <h1>SERVICES TO GROW YOUR BUSSINESS</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis itaque veniam repellat rerum
+                        est, obcaecati omnis debitis officiis voluptates tempora?</p>
+                    <button class="btn" data-toggle="modal" data-target="#modal-carousel">Read More</button>
+                    <button class="btn btn-outline-light" data-toggle="modal" data-target="#modal-carousel-about">
+                        About Us
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/b1.jpg" class="img-fluid">
+                <div class="carousel-caption carousel-caption--info">
+                    <h1>SERVICES TO GROW YOUR BUSSINESS</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis itaque veniam repellat rerum
+                        est, obcaecati omnis debitis officiis voluptates tempora?</p>
+                    <button class="btn" data-toggle="modal" data-target="#modal-carousel">Read More</button>
+                    <button class="btn btn-outline-light" data-toggle="modal" data-target="#modal-carousel-about">
+                        About Us
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/b1.jpg" class="img-fluid">
+                <div class="carousel-caption carousel-caption--info">
+                    <h1>SERVICES TO GROW YOUR BUSSINESS</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis itaque veniam repellat rerum
+                        est, obcaecati omnis debitis officiis voluptates tempora?</p>
+                    <button class="btn" data-toggle="modal" data-target="#modal-carousel">Read More</button>
+                    <button class="btn btn-outline-light" data-toggle="modal" data-target="#modal-carousel-about">
+                        About Us
+                    </button>
+                </div>
+            </div>
+        </div>
+        <a href="#carousel-slider" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#carousel-slider" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+    <!-- CAROUSEL MODAL -->
+    <div class="modal fade" id="modal-carousel">
+        <div class="modal-dialog">
+            <div class="modal-content modal-content--config">
+                <div class="modal-header text-center">
+                    <h1 class="text-danger">MERGED</h1>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/b1.jpg" class="img-fluid">
+                    <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia modi repudiandae
+                        eum delectus temporibus adipisci soluta aspernatur nihil voluptatibus fugiat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-carousel-about">
+        <div class="modal-dialog">
+            <div class="modal-content modal-content--about">
+                <div class="modal-header">
+                    <h1 class="text-primary">ABOUT</h1>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="./img/about.jpg" class="img-fluid">
+                    <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia modi repudiandae
+                        eum delectus temporibus adipisci soluta aspernatur nihil voluptatibus fugiat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- WHAT YOU GET -->
+    <section class="get" id="about">
+        <div class="container">
+            <div class="row get-title">
+                <div class="col">
+                    <h1>What you get</h1>
+                    <p>Our team provided consulting services focusing on the most critical business issues.</p>
+                </div>
+            </div>
+            <div class="line-get"></div>
+            <div class="row get-content">
+                <div class="col-sm-4 get-item">
+                    <div class="get-item--content">
+                        <i class="fa fa-th-large"></i>
+                        <h2>Advanced Business</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet repellat architecto veritatis?
+                            Quasi, natus aperiam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 get-item">
+                    <div class="get-item--content">
+                        <i class="fa fa-external-link-alt"></i>
+                        <h2>Free Updates</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet repellat architecto veritatis?
+                            Quasi, natus aperiam.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 get-item">
+                    <div>
+                        <i class="fa fa-expand-arrows-alt"></i>
+                        <h2>Looking Excellent</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet repellat architecto veritatis?
+                            Quasi, natus aperiam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTS US -->
+    <section class="contact-us d-flex" id="contact">
+        <div class="container ">
+            <div class="row contact-us-content">
+                <div class="col-sm-8">
+                    <h1>We Make The Best Bussiness Solutions</h1>
+                </div>
+                <div class="col-sm-4 pt-2">
+                    <button class="btn">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NUMBER -->
+    <section class="number">
+        <div class="container">
+            <div class="row get-title">
+                <div class="col text-center get-title-content">
+                    <h1>We are always ahead Professional solutions for your business</h1>
+                    <p>Our results will fascinate you with the results we have.</p>
+                </div>
+            </div>
+            <div class="row number-content text-center">
+                <div class="col-sm-4 number-item">
+                    <h2 class="counter">124</h2>
+                    <h3>Satisfied Clients</h3>
+                    <p>Pure satisfaction</p>
+                </div>
+                <div class="col-sm-4 number-item">
+                    <h2 class="counter">1,148</h2>
+                    <h3>Successful Investments</h3>
+                    <p>Net income</p>
+                </div>
+                <div class="col-sm-4 number-item">
+                    <h2 class="counter">45</h2>
+                    <h3>Branches Worldwide</h3>
+                    <p>Higest level of credibility </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="container">
+            <div class="row get-title">
+                <div class="col text-center get-title-content">
+                    <h1>Our Main Services</h1>
+                    <p>Our team provided consulting services focusing on the most critical business issues.</p>
+                </div>
+            </div>
+            <div class="row services-content">
+                <div class="col-sm-4 services-item services-red">
+                    <div class="services-item--content">
+                        <i class="fa fa-arrows-alt"></i>
+                        <h2>Commodities</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 services-item services-white">
+                    <div class="services-item--content">
+                        <i class="fa fa-chart-bar"></i>
+                        <h2>Analysis</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 services-item services-red">
+                    <div class="services-item--content">
+                        <i class="fab fa-btc"></i>
+                        <h2>Consulting</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 services-item services-white">
+                    <div class="services-item--content">
+                        <i class="fa fa-cogs"></i>
+                        <h2>Forecasting</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 services-item services-red">
+                    <div class="services-item--content">
+                        <i class="fa fa-bullseye"></i>
+                        <h2>Financial</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 services-item services-white">
+                    <div class="services-item--content">
+                        <i class="fa fa-cubes"></i>
+                        <h2>Assurance</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CUSTOMERS -->
+    <section class="customers" id="gallery">
+        <div class="container">
+            <div class="row get-title">
+                <div class="col text-center get-title-content">
+                    <h1>Our Customers' Opinion</h1>
+                    <p>Our team provided consulting services focusing on the most critical business issues.</p>
+                </div>
+            </div>
+            <div class="customer-content owl-carousel owl-theme owl-carousel--content">
+                <div class="customer-item item">
+                    <div class="customers-img">
+                        <img src="./img/t1.jpg" class="img-fluid">
+                    </div>
+                    <h3>Mary Watson</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quam nostrum magni optio
+                        aliquam at?</p>
+                </div>
+                <div class="customer-item item">
+                    <div class="customers-img">
+                        <img src="./img/t2.jpg">
+                    </div>
+                    <h3>Thompson</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quam nostrum magni optio
+                        aliquam at?</p>
+                </div>
+                <div class="customer-item item">
+                    <div class="customers-img">
+                        <img src="./img/t3.jpg">
+                    </div>
+                    <h3>Gomez</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quam nostrum magni optio
+                        aliquam at?</p>
+                </div>
+                <div class="customer-item item">
+                    <div class="customers-img">
+                        <img src="./img/t4.jpg">
+                    </div>
+                    <h3>Lilia</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quam nostrum magni optio
+                        aliquam at?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid footer-form">
+            <div class="row ">
+                <div class="col-lg-6 footer-input">
+                    <h1>Subscribe Newsletter</h1>
+                    <p>By subsscribing to our mailing list you will always get lasted news from us</p>
+                    <div class="input-group input-form">
+                        <input type="text" placeholder="Enter your email..." class="form-control">
+                        <span class="input-group-append">
+                            <button type="button">
+                                <i class="fa fa-envelope-square"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer-info">
+                    <h1>Our Links</h1>
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Gallery</p>
+                    <p>Contact</p>
+                </div>
+                <div class="col-lg-3 footer-icon">
+                    <h1>Contact Us</h1>
+                    <p>
+                        <i class="fa fa-map-marker"></i>
+                        <span> 1234k Avenue, 4th block, New York City</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope"></i>
+                        <span> info@example.com</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-phone"></i>
+                        <span> +1234 567 567</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col">
+                <p>
+                    &copy; 2018 Merged. All Rights Reserved | Design by <u>w3layouts</u>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- BACKTOTOP -->
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <img src="./img/arrow.png">
+    </a>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <!-- WAYPOINT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- POPPER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- COUNTING UP NUMBER JS -->
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+    <!-- OWL CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel(
+                {
+                    loop: true,
+                    margin: 10,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 1000,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                }
+            );
+        });
+    </script>
+    <!-- BACKTOTOP -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main-backToTop.js"></script>
+</body>
+
+</html>

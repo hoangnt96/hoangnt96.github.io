@@ -1,0 +1,121 @@
+.contact-carousel {
+    height: 300px;
+    background-image: url(../img/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact {
+    padding: 4rem 15px;
+}
+
+.contact-title h1 {
+    color: #ff4f81;
+    font-weight: 600;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+}
+
+.contact-title span {
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: black;
+}
+
+.contact-info {
+    background-color: #0e0e0e;
+    padding: 2em;
+}
+
+.contact-info h3 {
+    font-size: 1.4em;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-info-detail div {
+    height: 50px;
+    width: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    margin-right: 15px;
+}
+.contact-info-detail{
+    margin-bottom: 30px;
+}
+
+.contact-info-detail h4 {
+    font-size: 1em;
+    color: #ff4f81;
+}
+
+.contact-info-detail h4 span {
+    color: #cececa;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+}
+.contact-info-icon i{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: white;
+}
+.contact-fb{
+    color: #3b5998;
+    transition: all 0.5s;
+}
+.contact-fb:hover{
+    background-color: #3b5998;
+    color: white;
+}
+.contact-tw{
+    color: #1da1f2;
+    transition: all 0.5s;
+}
+.contact-tw:hover{
+    background-color: #1da1f2;
+    color: white;
+}
+.contact-wf{
+    color: #f26522;
+    transition: all 0.5s;
+}
+.contact-wf:hover{
+    background-color: #f26522;
+    color: white;
+}
+.contact-info-img{
+    background-image: url(../img/g11.jpg);
+    background-size: cover;
+}
+.contact-form input,.contact-form textarea{
+    padding: 14px;
+    border-radius: 0px;
+    background-color: #f5f5f5;
+}
+.btn-contact-submit{
+    background-color:#ff4f81 ;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.btn-contact-submit:hover{
+    background-color: #ec1955;
+
+}
+.contact-map iframe{
+width: 100%;
+height: 400px;
+}
+.footer-contact{
+    margin-top: -5px;
+}

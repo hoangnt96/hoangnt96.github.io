@@ -1,0 +1,129 @@
+.skills {
+    background-image: url(../img/4.jpg);
+    @extend %backgroundImg;
+    .skills-content {
+        position: relative;
+        .container {
+            padding: 100px $pd-1 + 3;
+            .row {
+                .col-md-6 {
+                    padding: 0 $pd-0;
+                    .skills-left {
+                        height: 400px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        h3 {
+                            
+                            letter-spacing: $letter-spacing-1 + 1;
+                            font-size: $fs-1 + 4;
+                            color: $color-white-0;
+                        }
+                    }
+                    .skills-right {
+                        padding: 0 $pd-0;
+                        h4 {
+                            font-size: $fs-1 - 2;
+                            letter-spacing: $letter-spacing-2;
+                            color: $color-white-0;
+                            margin-bottom: $mg-2;
+                        }
+                        p {
+                            line-height: $line-height-2 + 5;
+                            margin-bottom: $mg-2;
+                            color: $color-white-0;
+                        }
+                        .skills-chart {
+                            padding-top: $pd-0;
+                            .progress-content{
+                                background-color: $color-gray-3;
+                                padding: 0;
+                                margin: 0;
+                            }
+                            .progress {
+                                background-color: $color-gray-3;
+                                height: 20px;
+                                margin: $mg-4 0 $mg-3;
+                                letter-spacing: $letter-spacing-2 - 1;
+                                overflow: visible;
+                                .pad {
+                                    padding: 15px;
+                                }
+                                
+                                .alert {
+                                    display: none;
+                                }
+                                .progress-bar {
+                                    background-color: $color-white-0;
+                                    color: $color-black-2;
+                                    text-align: left;
+                                    padding-left: $pd-1 - 2;
+                                    font-size: $fs-2 - 3;
+                                    line-height: $line-height-2 - 5;
+                                    position: relative;
+                                    overflow: visible;
+                                    span {
+                                        position: absolute;
+                                        top: -28px;
+                                        right: -5px;
+                                        display: inline-block;
+                                        min-width: 25px;
+                                        height: 20px;
+                                        padding: 0 $pd-2;
+                                        text-align: center;
+                                        letter-spacing: 0;
+                                        color: $color-black-2;
+                                        border-radius: $border-radius-1;
+                                        background-color: $color-gray-4;
+                                        line-height: $line-height-4;
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            bottom: -2px;
+                                            left: 15px;
+                                            display: block;
+                                            width: 5px;
+                                            height: 5px;
+                                            transform: rotate(45deg);
+                                            background-color: $color-gray-4;
+                                        }
+                                    }
+                                }
+                              
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .skills-overlay{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            background-color: $color-gray-6;
+            content: "";
+        }
+    }
+}
+@include responsive("medium"){
+    .skills{
+        .skills-content{
+            .container{
+                .row{
+                    .col-md-6{
+                        .skills-left{
+                            h3{
+                                font-size: $fs-1 - 2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .skills-overlay{
+            display: none;
+        }
+    }
+}

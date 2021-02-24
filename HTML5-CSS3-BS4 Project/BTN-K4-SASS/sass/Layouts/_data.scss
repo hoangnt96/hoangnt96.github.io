@@ -1,0 +1,54 @@
+.data {
+    margin-top: $mg-4 - 3;
+    padding: 100px 0;
+    background-color: $color-black-6;
+    .data-content {
+        .col-md-3 {
+            padding: 0 $pd-0;
+            text-align: center;
+            .intro-icon {
+                .icon {
+                    @include iconMoon($fs-6, $color-white-0, $letter-spacing-4);
+                    padding-right: $pd-3;
+                }
+            }
+            span {
+                font-size: $fs-5 + 1;
+                line-height: $line-height-0;
+                letter-spacing: $letter-spacing-2;
+                color: $color-white-0;
+            }
+            p {
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $color-white-0;
+                margin-top: $mg-4;
+            }
+        }
+    }
+}
+@include responsive("medium"){
+    .data {
+        margin-top: 0;
+        .data-content {
+            .col-md-3 {
+                padding: $pd-0 0;
+                .intro-icon {
+                    .icon {
+                        @include iconMoon($fs-6, $color-white-0, $letter-spacing-4);
+                        padding-right: $pd-3;
+                    }
+                }
+                span {
+                    font-size: $fs-4 - 4;
+                }
+                p {
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $color-white-0;
+                    margin-top: $mg-4;
+                }
+            }
+        }
+    }
+}

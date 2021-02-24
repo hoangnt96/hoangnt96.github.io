@@ -1,0 +1,26 @@
+.button--black{
+    @include styleButton($color-white-0,$color-black-2,transparent,$fs-0 - 1,$fw-2,$pd-1 + 3, $pd-0);
+    letter-spacing: $letter-spacing-2 - 1;
+    text-align: center;
+    transition: all .5s;
+    &:hover{
+        @include hoverButton($color-white-0,$color-yellow-0,transparent)
+    }
+}
+.button--yellow{
+    @include styleButton($color-white-0,$color-yellow-0,transparent,$fs-0 - 1,$fw-2,$pd-1 + 3, $pd-0);
+    letter-spacing: $letter-spacing-2 - 1;
+    text-align: center;
+    transition: all .5s;
+    &:hover{
+        @include hoverButton($color-black-2,$color-white-0,transparent)
+    }
+}
+.label-danger{
+    @include styleButton($color-white-0,$color-red-0,transparent,75%,$fw-5,0.3em, 0.6em);
+    letter-spacing: $letter-spacing-4;
+    text-align: center;
+    border-radius: .25em;
+    display: inline;
+    padding-top: 0.2em;
+}

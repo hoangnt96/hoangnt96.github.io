@@ -1,0 +1,101 @@
+.blog {
+    padding: 100px 0;
+    .blog-content {
+        .blog-body {
+            padding-top: 50px;
+            .col-md-6 {
+                padding: 0 $pd-0;
+            }
+            .blog-body--left {
+                position: relative;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .blog-info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: $pd-3;
+                    background: $color-gray-6;
+                    color: $color-white-0;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+            .blog-body--right {
+                padding: $pd-0 0;
+                .blog-body--title {
+                    margin-bottom: $mg-4;
+                    a {
+                        margin-right: $mg-4;
+                        color: $color-gray-12;
+                        font-size: $fs-2 - 1;
+                        letter-spacing: $letter-spacing-4;
+                        transition: all .5s;
+                        &:hover{
+                            color: $color-yellow-0;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                h4 {
+                    margin-bottom: $mg-4;
+                    a {
+                        color: $color-black-2;
+                        font-size: $fs-0 + 3;
+                        line-height: $line-height-0;
+                        letter-spacing: $letter-spacing-4;
+                        transition: all .5s;
+                        &:hover{
+                            color: $color-yellow-0;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .blog-date {
+                    margin-bottom: $mg-6;
+                    letter-spacing: $letter-spacing-2;
+                    color: $color-gray-12;
+                    font-size: $fs-2 - 1;
+                    span {
+                        &:first-of-type{
+                            padding-left: $pd-2 - 3;
+                            padding-right: $pd-2 - 3;
+                        }
+                    }
+                    a {
+                        color: $color-gray-12;
+                        font-size: $fs-2 - 1;
+                        letter-spacing: $letter-spacing-2;
+                        transition: all .5s;
+                        &:hover{
+                            color: $color-yellow-0;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                p {
+                    margin-bottom: $mg-2;
+                    line-height: $line-height-2 + 5;
+                    color: $color-gray-1;
+                }
+                a {
+                    color: $color-gray-13;
+                    letter-spacing: $letter-spacing-4;
+                    transition: all .5s;
+                    i {
+                        margin-left: $mg-4;
+                        font-weight: bold;
+                    }
+                    &:hover{
+                        color: $color-black-2;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
